@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level Design I - 2D Project", "Level Design I - 2D Project.csproj", "{8330704C-DD18-ABB6-0CC2-CA74BF1E375C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level Design I - 2D Project.Editor", "Level Design I - 2D Project.Editor.csproj", "{46E46E9E-A876-746C-9E25-6BFF92EEB808}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8330704C-DD18-ABB6-0CC2-CA74BF1E375C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8330704C-DD18-ABB6-0CC2-CA74BF1E375C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8330704C-DD18-ABB6-0CC2-CA74BF1E375C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8330704C-DD18-ABB6-0CC2-CA74BF1E375C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E46E9E-A876-746C-9E25-6BFF92EEB808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E46E9E-A876-746C-9E25-6BFF92EEB808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E46E9E-A876-746C-9E25-6BFF92EEB808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E46E9E-A876-746C-9E25-6BFF92EEB808}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
