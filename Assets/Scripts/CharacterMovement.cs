@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class CharacterMovement : MonoBehaviour {
 
@@ -7,7 +6,7 @@ public class CharacterMovement : MonoBehaviour {
 	public float sprintSpeed = 8f;
 	public float jumpSpeed = 10f;
 	public float gravity = 20f;
-	private Vector3 moveDirection = Vector3.zero;
+	private Vector3 moveDirection = Vector2.zero;
 	public bool isJumping = false;
     public bool canDoubleJump = false;
     public int jumpCount = 0;
@@ -50,7 +49,7 @@ public class CharacterMovement : MonoBehaviour {
         CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            moveDirection = new Vector2(Input.GetAxis("Horizontal"), 0);
             moveDirection = transform.TransformDirection(moveDirection);
             isJumping = false;
             DBMovement();

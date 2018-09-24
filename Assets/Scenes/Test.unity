@@ -4562,7 +4562,7 @@ ParticleSystemRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4647,7 +4647,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 0
+  randomSeed: -1072349785
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -22739,10 +22739,9 @@ GameObject:
   - component: {fileID: 1657427724}
   - component: {fileID: 1657427723}
   - component: {fileID: 1657427722}
-  - component: {fileID: 1657427721}
   m_Layer: 0
   m_Name: WinZone
-  m_TagString: Untagged
+  m_TagString: WinTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22761,17 +22760,6 @@ Transform:
   m_Father: {fileID: 1634686294}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1657427721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1657427719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a37e86957d48f274aac0ac5ed160c1ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1657427722
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23685,10 +23673,9 @@ GameObject:
   - component: {fileID: 1761683434}
   - component: {fileID: 1761683433}
   - component: {fileID: 1761683432}
-  - component: {fileID: 1761683431}
   m_Layer: 0
   m_Name: DeathZone1
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23706,17 +23693,6 @@ Transform:
   m_Father: {fileID: 735178116}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1761683431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1761683429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed787f7fa132c3442865ef7760d0c7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1761683432
 MeshRenderer:
   m_ObjectHideFlags: 0
