@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covfefe", "Covfefe.csproj", "{8C298C4B-F0D0-C79C-8846-37569A261D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covfefe.Editor", "Covfefe.Editor.csproj", "{8A8C01C4-D788-4501-D41F-448E8DB20BEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C298C4B-F0D0-C79C-8846-37569A261D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C298C4B-F0D0-C79C-8846-37569A261D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C298C4B-F0D0-C79C-8846-37569A261D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C298C4B-F0D0-C79C-8846-37569A261D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8C01C4-D788-4501-D41F-448E8DB20BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8C01C4-D788-4501-D41F-448E8DB20BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8C01C4-D788-4501-D41F-448E8DB20BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8C01C4-D788-4501-D41F-448E8DB20BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -91,10 +91,12 @@ public class CharacterMovement : MonoBehaviour {
             }
         }
 
-        if (Input.GetButton("Dash"))
+        /*
+         * if (Input.GetButton("Dash"))
         {
 
         }
+        */
 
         moveDirection.y -= gravity * Time.deltaTime;
         moveDirection.x = Input.GetAxis("Horizontal") * ((isSprinting) ? sprintSpeed : speed);
