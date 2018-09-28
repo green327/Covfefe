@@ -2,7 +2,19 @@
 
 public class CharacterMovement : MonoBehaviour {
 
-	public float speed = 6f;
+    //check if player is sliding
+    bool sliding = false;
+
+    //store the slide time
+
+    float slideTimer = 0f;    
+    
+    //set the maximum time to slide
+    public float maxSlideTime = 1.5f;
+
+
+
+    public float speed = 6f;
 	public float sprintSpeed = 8f;
 	public float jumpSpeed = 10f;
 	public float gravity = 20f;
@@ -23,12 +35,16 @@ public class CharacterMovement : MonoBehaviour {
 	public AudioClip jumpSound;
 	public AudioClip spawnSound;
 
-	// Use this for initialization
-	void Start () 
+    public CharacterController controller;
+
+    // Use this for initialization
+    void Start () 
 	{
 		source = GetComponent<AudioSource>();
 		source.PlayOneShot(spawnSound);
-	}
+        controller = GetComponent<CharacterController>();
+        controller.height = 2.0f;
+    }
 
     // Update is called once per frame
     void Update()
@@ -44,9 +60,6 @@ public class CharacterMovement : MonoBehaviour {
             isSprinting = false;
         }
 
-
-
-        CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
             moveDirection = new Vector2(Input.GetAxis("Horizontal"), 0);
@@ -90,12 +103,32 @@ public class CharacterMovement : MonoBehaviour {
             }
         }
 
-        /*
-         * if (Input.GetButton("Dash"))
+        //slide input
+        if(Input.GetButtonDown("Slide") && !sliding)
         {
+            slideTimer = 0f;
+
+            //HOOK UP AFTER ANIMATION
+            //anim.SetBool("isSliding",true);
+
+            controller.height = 1.0f;
+
+            sliding = true;
 
         }
-        */
+
+        if(sliding)
+        {
+            slideTimer += Time.deltaTime;
+            if(slideTimer > maxSlideTime)
+            {
+                sliding = false;
+                //HOOK UP AFTER ANIMATION
+                //anim.SetBool("isSliding",false);
+
+                controller.height = 2.0f;
+            }
+        }
 
         moveDirection.y -= gravity * Time.deltaTime;
         moveDirection.x = Input.GetAxis("Horizontal") * ((isSprinting) ? sprintSpeed : speed);

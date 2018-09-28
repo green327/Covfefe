@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CollectiblePoints : MonoBehaviour {
 
-	/// SOUNDS
+	// SOUNDS
 	private AudioSource source;
 	public AudioClip collectSound;
 	private bool isCollected = false;
@@ -21,6 +21,7 @@ public class CollectiblePoints : MonoBehaviour {
 		rend = GetComponent<Renderer>();
 	}
 	
+    //Checks if theplayer has collided with the collectable's trigger
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.tag == "Player" && !isCollected)
@@ -28,7 +29,7 @@ public class CollectiblePoints : MonoBehaviour {
 			source.PlayOneShot(collectSound);
 			isCollected = true;
 			rend.enabled = false;
-			lm.CupCollected();
+			lm.CollectibleCollected();
 			if(hasParticleEffect)
 			{
 				Destroy(particleEffect);
@@ -37,6 +38,7 @@ public class CollectiblePoints : MonoBehaviour {
 		}
 	}
 	
+    //Destroys the collectable
 	IEnumerator Delay(float waitTime) 
 	{
 		yield return new WaitForSeconds(waitTime);
