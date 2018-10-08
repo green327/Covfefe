@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 99a7a14d324a58040953077152d1c26e
+timeCreated: 1538588271
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Charleston
+  fontNames:
+  - Charleston
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

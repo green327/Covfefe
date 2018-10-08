@@ -8,6 +8,14 @@ TagManager:
   - Collectible
   - WinTrigger
   - DeathTrigger
+  - PatrolPoint
+  - Bat
+  - Wall
+  - Ceiling
+  - RotationPlatform
+  - GroundCheck
+  - CeilingCheck
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -17,8 +25,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Platform
+  - Falling
   - 
   - 
   - 
